@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex: 1;
+    margin: 0;
+    height: 100vh;
+}
+
+header{
+    background-image: url("./assets/sakura.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex: 1 1 0;
+    margin: 0;
+}
+
+main{
+    min-height: 100vh;
+    height: auto;
+    flex-basis: 60%;
+    flex-grow: 2;
+    background-color: #F9FAFB;
+}
