@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Norse Bold';
-    src: url(fonts/Norse-Bold.otf) format('opentype');
+    font-family: 'Amanojaku';
+    src: url(fonts/Amanojaku.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -30,12 +30,15 @@ header{
     background: #8888889f;
     justify-content: center;
     gap: 20px;
+    align-items: center;
+    padding: 30px 5px;
 }
 
-.odin-text{
-    font-family: 'Norse Bold';
-    color: #ffffff;
+.sakura-text{
+    font-family: 'Amanojaku';
+    color: #facece;
     font-size: 48px;
+    margin-top: 50px;
 }
 
 .logo img{
