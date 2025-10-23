@@ -10,6 +10,7 @@ body{
     flex: 1;
     margin: 0;
     height: 100vh;
+    overflow: hidden;
 }
 
 header{
@@ -46,9 +47,86 @@ header{
 }
 
 main{
-    min-height: 100vh;
-    height: auto;
+    height: 100vh;
     flex-basis: 60%;
     flex-grow: 2;
     background-color: #F9FAFB;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 25px;
+}
+
+.main-text-container{
+    font-family: "Send Flowers", cursive;
+    font-size: 1.28em;
+}
+
+form{
+    font-family: "Story Script", sans-serif;
+    font-size: 1.2em;
+}
+
+form legend{
+    margin-left: 10px;
+}
+
+form input{
+    font-family: "Story Script", sans-serif;
+    width: 20vw;
+    padding: 5px;
+    font-size: 0.88em;
+}
+
+form fieldset{
+    border: none;
+    display: flex;
+    gap: 20px;
+}
+
+label{
+     display: block;
+}
+
+.form-footer{
+    margin-left: 15px;
+}
+
+button{
+    font-family: "Lobster Two", sans-serif;
+    padding: 8px;
+    font-size: 1.05em;
+    border-radius: 25%;
+    background-color: #ffc0cb;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #ff98a9;
+}
+
+button:active{
+    background-color: #f75a8e;
+    transform: scale(1.1);
+}
+
+#login-txt{
+    font-family: "Send Flowers", cursive;
+    font-size: 1.28em;
+    font-weight: bold;
+}
+
+#login-redirect{
+    color: #f75a8e;
+    cursor: pointer;
+}
+
+#login-redirect:hover{
+    opacity: 0.8;
+}
+
+#login-redirect:active{
+    opacity: 0.65;
 }
