@@ -58,9 +58,6 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-main{
     position: relative;
     min-height: 100vh;
     background: #FA6BB5;
@@ -71,12 +68,6 @@ main{
 }
 
 main::before {
-    content: '';
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
     background: 
         radial-gradient(circle at 20% 50%, rgba(228, 92, 255, 0.3) 0%, transparent 50%),
         radial-gradient(circle at 80% 50%, rgba(253, 194, 255, 0.3) 0%, transparent 50%);
@@ -178,4 +169,111 @@ button:active{
 
 #login-redirect:active{
     opacity: 0.65;
+}
+
+@media(max-width: 1035px){
+
+    main{
+        font-size: 0.88em;
+        flex-basis: 45%;
+    }
+
+    .sakura-text{
+        font-size: 38px;
+    }
+
+    .logo img{
+        width: 55px;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    main{
+        font-size: 0.78em;
+    }
+
+    .sakura-text{
+        font-size: 30px;
+    }
+
+    .logo img{
+        width: 40px;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 620px) {
+    main{
+        font-size: 0.82em;
+    }
+
+    body{
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    header{
+        height: 15vh;
+    }
+
+    .logo{
+        width: 100vw;
+    }
+
+    main{
+        align-items: center;
+    }
+
+    form fieldset{
+        align-items: center;
+        justify-content: center;
+    }
+
+    form input{
+        width: 38vw;
+    }
+
+    .form-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-footer{
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 390px) {
+    body{
+        background: #FA6BB5;
+        background: -webkit-linear-gradient(90deg, rgba(250, 107, 181, 1) 0%, rgba(245, 181, 255, 1) 50%, rgba(250, 107, 181, 1) 100%);
+        background: -moz-linear-gradient(90deg, rgba(250, 107, 181, 1) 0%, rgba(245, 181, 255, 1) 50%, rgba(250, 107, 181, 1) 100%);
+        background: linear-gradient(90deg, rgba(250, 107, 181, 1) 0%, rgba(245, 181, 255, 1) 50%, rgba(250, 107, 181, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FA6BB5", endColorstr="#FA6BB5", GradientType=1);
+    }
+
+    main{
+        background: transparent;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main-text-container{
+        font-size: 1.05em;
+    }
+
+    .logo{
+        height: 5vh;
+    }
+
+    form input{
+        width: 80vw;
+    }
+
+    form fieldset{
+        flex-direction: column;
+    }
 }
