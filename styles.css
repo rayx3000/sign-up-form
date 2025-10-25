@@ -206,11 +206,20 @@ button:active{
 @media (max-width: 620px) {
     main{
         font-size: 0.82em;
+        background: transparent;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 10.5%;
     }
 
     body{
         flex-direction: column;
         overflow: auto;
+        background: #FA6BB5;
+        background: -webkit-linear-gradient(90deg, rgba(250, 107, 181, 1) 0%, rgba(245, 181, 255, 1) 50%, rgba(250, 107, 181, 1) 100%);
+        background: -moz-linear-gradient(90deg, rgba(250, 107, 181, 1) 0%, rgba(245, 181, 255, 1) 50%, rgba(250, 107, 181, 1) 100%);
+        background: linear-gradient(90deg, rgba(250, 107, 181, 1) 0%, rgba(245, 181, 255, 1) 50%, rgba(250, 107, 181, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FA6BB5", endColorstr="#FA6BB5", GradientType=1);
     }
 
     header{
@@ -219,10 +228,6 @@ button:active{
 
     .logo{
         width: 100vw;
-    }
-
-    main{
-        align-items: center;
     }
 
     form fieldset{
@@ -247,20 +252,6 @@ button:active{
 }
 
 @media(max-width: 390px) {
-    body{
-        background: #FA6BB5;
-        background: -webkit-linear-gradient(90deg, rgba(250, 107, 181, 1) 0%, rgba(245, 181, 255, 1) 50%, rgba(250, 107, 181, 1) 100%);
-        background: -moz-linear-gradient(90deg, rgba(250, 107, 181, 1) 0%, rgba(245, 181, 255, 1) 50%, rgba(250, 107, 181, 1) 100%);
-        background: linear-gradient(90deg, rgba(250, 107, 181, 1) 0%, rgba(245, 181, 255, 1) 50%, rgba(250, 107, 181, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FA6BB5", endColorstr="#FA6BB5", GradientType=1);
-    }
-
-    main{
-        background: transparent;
-        justify-content: space-around;
-        align-items: center;
-    }
-
     .main-text-container{
         font-size: 1.05em;
     }
